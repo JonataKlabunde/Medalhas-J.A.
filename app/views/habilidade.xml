@@ -1,0 +1,7 @@
+<Alloy>
+	<Window id="winHabilidadeID" onOpen="onOpen" >
+		<ScrollView id="scrollOuroID" layout="vertical" />
+		<ScrollView id="scrollPrataID" layout="vertical" />
+		<Label id="labelTituloID">Habilidade</Label>
+	</Window>
+</Alloy>

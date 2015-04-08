@@ -1,0 +1,127 @@
+
+"#winSecaoID": {
+	backgroundImage : '/imagens/fundo.png',
+	height : Titanium.UI.FILL,
+	width :Titanium.UI.FILL,
+	tabBarHidden : true,
+	navBarHidden : true,
+	hideShadow : true,
+	tabBarHidden : true,
+	fullscreen : true,
+	orientationModes : [Ti.UI.PORTRAIT]
+}
+
+
+"#viewFisicoID":{
+	backgroundImage : '/imagens/fisico.png',
+	height : Alloy.Globals.larguraIconesSesoes,
+	width : Alloy.Globals.larguraIconesSesoes,
+	top : '10%',
+	left : '7%'
+}
+"#viewHabilidadeID":{
+	backgroundImage : '/imagens/habilidade.png',
+	height : Alloy.Globals.larguraIconesSesoes,
+	width : Alloy.Globals.larguraIconesSesoes,
+	top : '10%',
+	right : '7%'
+}
+"#viewExpedicaoID":{
+	backgroundImage : '/imagens/expedicao.png',
+	height : Alloy.Globals.larguraIconesSesoes,
+	width : Alloy.Globals.larguraIconesSesoes,
+	top : '30%'
+}
+"#viewProjetoEServicoID":{
+	backgroundImage : '/imagens/ProjetoEServico.png',
+	height : Alloy.Globals.larguraIconesSesoes,
+	width : Alloy.Globals.larguraIconesSesoes,
+	bottom : '28%',
+	left : '7%'
+}
+"#viewAperfeicoamentoCulturalID":{
+	backgroundImage : '/imagens/aperfeicoamentoCultural.png',
+	height : Alloy.Globals.larguraIconesSesoes,
+	width : Alloy.Globals.larguraIconesSesoes,
+	bottom : '28%',
+	right : '7%'
+}
+
+
+
+//** labels
+"#labelFisicoID":{
+	font : {
+		fontSize : 50,
+		fontFamily : 'MAMMAGAMMA',
+	},
+	color : 'white',
+    shadowColor : '#15201a',
+	left: '10%',
+	top: '30%'
+}
+"#labelHabilidadeID":{
+	font : {
+		fontSize : 50,
+		fontFamily : 'MAMMAGAMMA',
+	},
+	color : 'white',
+    shadowColor : '#15201a',
+	right: '9%',
+	top: '30%'
+}
+"#labelExpedicaoID":{
+	font : {
+		fontSize : 50,
+		fontFamily : 'MAMMAGAMMA',
+	},
+	color : 'white',
+    shadowColor : '#15201a',
+	top: '50%'
+}
+"#labelProjetoeServicoID":{
+	font : {
+		fontSize : 50,
+		fontFamily : 'MAMMAGAMMA',
+	},
+	color : 'white',
+    shadowColor : '#15201a',
+	bottom: '20%',
+	left : '7%'
+}
+"#labelAperfeicoamentoCulturalID":{
+	font : {
+		fontSize : 50,
+		fontFamily : 'MAMMAGAMMA',
+	},
+	color : 'white',
+    shadowColor : '#15201a',
+	bottom: '20%',
+	right: '2%',
+	
+}
+
+
+
+
+"#labelTituloID":{
+	font : {
+		fontSize : 100,
+		fontFamily : 'MAMMAGAMMA',
+	},
+	color : '#ffffff',
+	bottom : '5%'
+}
+
+
+
+"#viewWarningID":{
+	backgroundImage : '/imagens/warning.png',
+	width : Alloy.Globals.warning,
+	height : Alloy.Globals.warning,
+	bottom : '5%',
+	right : '2%'
+}
+
+
+

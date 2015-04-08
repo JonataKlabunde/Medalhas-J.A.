@@ -1,0 +1,7 @@
+<Alloy>
+	<Window id="winAperfeicoamentoCulturalID" onOpen="onOpen" >
+		<ScrollView id="scrollOuroID" layout="vertical" />
+		<ScrollView id="scrollPrataID" layout="vertical" />
+		<Label id="labelTituloID">Aperfeiçoamento Cultural</Label>
+	</Window>
+</Alloy>

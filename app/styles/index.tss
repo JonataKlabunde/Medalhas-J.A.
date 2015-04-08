@@ -1,0 +1,56 @@
+"#winIndexID": {
+	backgroundImage : '/imagens/fundo.png',
+	height : Titanium.UI.FILL,
+	width :Titanium.UI.FILL,
+	tabBarHidden : true,
+	navBarHidden : true,
+	hideShadow : true,
+	tabBarHidden : true,
+	fullscreen : true,
+	orientationModes : [Ti.UI.PORTRAIT]
+	
+}
+
+"#viewOuroID":{
+	height : Alloy.Globals.larguraMedalha,
+	width : Alloy.Globals.larguraMedalha,
+	backgroundImage : '/imagens/ouro.png',
+	top : '25%',
+	left : '7%'
+	
+}
+"#viewPrataID":{
+	height : Alloy.Globals.larguraMedalha,
+	width : Alloy.Globals.larguraMedalha,
+	backgroundImage : '/imagens/prata.png',
+	top : '25%',
+	right : '7%'
+}
+"#labelTituloID":{
+	font : {
+		fontSize : 100,
+		fontFamily : 'MAMMAGAMMA',
+	},
+	color : '#ffffff',
+	bottom : '5%'
+}
+
+
+//** labels botões
+"#labelOuroID":{
+	font : {
+		fontSize : 50,
+		fontFamily : 'MAMMAGAMMA',
+	},
+	color : '#000000',
+	left: '18%'
+}
+"#labelPrataID":{
+	font : {
+		fontSize : 50,
+		fontFamily : 'MAMMAGAMMA',
+	},
+	color : '#000000',
+	right : '18%'
+	
+}

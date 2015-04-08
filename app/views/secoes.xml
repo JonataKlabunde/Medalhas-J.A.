@@ -1,0 +1,18 @@
+<Alloy>
+	<Window id="winSecaoID">
+		<View id="viewFisicoID" />
+		<Label id="labelFisicoID">Físico</Label>
+		<View id="viewHabilidadeID" />
+		<Label id="labelHabilidadeID">Habilidade</Label>
+		<View id="viewExpedicaoID" />
+		<Label id="labelExpedicaoID">Expedição</Label>
+		<View id="viewProjetoEServicoID" />
+		<Label id="labelProjetoeServicoID">Projeto de
+		Serviço</Label>
+		<View id="viewAperfeicoamentoCulturalID" />
+		<Label id="labelAperfeicoamentoCulturalID">Aperfeiçoamento 
+			   Cultural</Label>		
+		<Label id="labelTituloID">Seções</Label>
+		<View id="viewWarningID" onClick="onClick" />
+	</Window>
+</Alloy>

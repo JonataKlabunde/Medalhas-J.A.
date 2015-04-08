@@ -1,0 +1,35 @@
+
+"#winExpedicaoID": {
+  	backgroundImage : '/imagens/fundo.png',
+	height : Titanium.UI.FILL,
+	width :Titanium.UI.FILL,
+	tabBarHidden : true,
+	navBarHidden : true,
+	hideShadow : true,
+	tabBarHidden : true,
+	fullscreen : true,
+	orientationModes : [Ti.UI.PORTRAIT]
+}
+
+"#labelTituloID":{
+	font : {
+		fontSize : 100,
+		fontFamily : 'MAMMAGAMMA',
+	},
+	color : '#ffffff',
+	bottom : '5%'
+}
+
+"#scrollOuroID":{
+	top : 0,
+	bottom : '17%',
+	right : 20,
+	left : 20
+}
+
+"#scrollPrataID":{
+	top : 0,
+	bottom : '17%',
+	right : 20,
+	left : 20
+}

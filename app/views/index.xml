@@ -1,0 +1,9 @@
+<Alloy>
+	<Window id="winIndexID">
+		<View id="viewOuroID" />
+		<Label id="labelOuroID">Ouro</Label>
+		<View id="viewPrataID" />
+		<Label id="labelPrataID">Prata</Label>
+		<Label id="labelTituloID">Medalhas J.A.</Label>
+	</Window>
+</Alloy>
