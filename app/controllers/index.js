@@ -1,5 +1,5 @@
 
-
+//** teste
 Alloy.Globals.efeitoClick($.viewOuroID, function(e){
     Alloy.Globals.botaoClicado = 'ouro';
     setTimeout(function(e){
