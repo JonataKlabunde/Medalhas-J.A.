@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="Theme.NoActionBar" parent="@style/Theme.AppCompat.Light" >
+		<item name="android:windowActionBar">false</item>
+		<item name="android:windowNoTitle">true</item>
+    </style>
+</resources>
+
+
+<!-- <EditText
+    android:id="@+id/launch_codes"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:hint="@string/enter_launch_codes"
+    android:inputType="number"
+    android:imeActionLabel="@string/launch" /> -->

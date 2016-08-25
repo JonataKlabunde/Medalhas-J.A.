@@ -1,56 +1,89 @@
 "#winIndexID": {
-	backgroundImage : '/imagens/fundo.png',
-	height : Titanium.UI.FILL,
-	width :Titanium.UI.FILL,
-	tabBarHidden : true,
-	navBarHidden : true,
-	hideShadow : true,
-	tabBarHidden : true,
-	fullscreen : true,
-	orientationModes : [Ti.UI.PORTRAIT]
-	
+	tabBarHidden: true,
+	navBarHidden: true
 }
 
-"#viewOuroID":{
-	height : Alloy.Globals.larguraMedalha,
-	width : Alloy.Globals.larguraMedalha,
-	backgroundImage : '/imagens/ouro.png',
-	top : '25%',
-	left : '7%'
-	
-}
-"#viewPrataID":{
-	height : Alloy.Globals.larguraMedalha,
-	width : Alloy.Globals.larguraMedalha,
-	backgroundImage : '/imagens/prata.png',
-	top : '25%',
-	right : '7%'
-}
-"#labelTituloID":{
-	font : {
-		fontSize : 100,
-		fontFamily : 'MAMMAGAMMA',
+".descricao":{
+	top : 10,
+	left: 30,
+	font: {
+		fontSize: 16,
+		fontFamily: 'NexaRegular',
 	},
-	color : '#ffffff',
-	bottom : '5%'
+}
+".titulo":{
+	left: 10,
+	top : 20,
+	font: {
+        fontSize: 22,
+        fontFamily: 'NexaRegular',
+    },
+}
+".secao":{
+	height: Titanium.UI.SIZE,
+	backgroundColor: "white",
+	bottom : 20,
+	top : 20,
+	left: 5,
+	right: 5,
 }
 
 
-//** labels botões
-"#labelOuroID":{
-	font : {
-		fontSize : 50,
-		fontFamily : 'MAMMAGAMMA',
-	},
-	color : '#000000',
-	left: '18%'
+"#barraWidget" : {
+    top: 0,
+    tabs: true,
+    indicatorColor: "#8bc53e",
+    backgroundColor : "#d6d7db",
+	color : '#535458',
+    font : {
+        fontSize : 14,
+        fontWeight : 'bold',
+
+    },
+    tabWidth : 'auto'
 }
-"#labelPrataID":{
-	font : {
-		fontSize : 50,
-		fontFamily : 'MAMMAGAMMA',
-	},
-	color : '#000000',
-	right : '18%'
-	
+
+"#scroll": {
+	bottom: 0
+}
+
+"#ouro": {
+	title: "Ouro",
+	backgroundColor: "#ffc400",
+	height: Titanium.UI.FILL,
+}
+"#prata": {
+	title: "Prata",
+	backgroundColor: "#bababa",
+}
+"#bronze": {
+	title: "Bronze",
+	backgroundColor: "#a5754f",
+}
+"#Sobre": {
+	title: "Sobre",
+}
+
+"#imagemOuro": {
+	top : 20,
+	image: '/imagens/ouro.png'
+}
+"#imagemPrata": {
+	top : 20,
+	image: '/imagens/prata.png'
+}
+"#imagemBronze": {
+	top : 20,
+	image: '/imagens/bronze.png'
+}
+
+"#SobreDescricao": {
+	borderRadius: 20
+}
+
+"#imagemSobre": {
+	top : 20,
+	image: '/imagens/appicon.png',
+	height : 70,
+	width: 70,
 }

@@ -1,7 +1,0 @@
-<Alloy>
-	<Window id="winProjetoEServicoID" onOpen="onOpen" >
-		<ScrollView id="scrollOuroID" layout="vertical" />
-		<ScrollView id="scrollPrataID" layout="vertical" />
-		<Label id="labelTituloID">Projeto de Serviço</Label>
-	</Window>
-</Alloy>

@@ -1,7 +1,0 @@
-<Alloy>
-	<Window id="winDetalhesID" onOpen="onOpen" >
-		<ScrollView id="scrollOuroID" layout="vertical" />
-		<ScrollView id="scrollPrataID" layout="vertical" />
-		<Label id="labelTituloID">Detalhes</Label>
-	</Window>
-</Alloy>

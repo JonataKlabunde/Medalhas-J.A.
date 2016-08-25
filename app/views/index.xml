@@ -1,9 +1,230 @@
 <Alloy>
-	<Window id="winIndexID">
-		<View id="viewOuroID" />
-		<Label id="labelOuroID">Ouro</Label>
-		<View id="viewPrataID" />
-		<Label id="labelPrataID">Prata</Label>
-		<Label id="labelTituloID">Medalhas J.A.</Label>
+	<Window id="winIndexID" onAndroidback="voltar" onOpen="open" >
+		<View layout='vertical' >
+			<Widget id="barraWidget" src="de.manumaticx.pagingcontrol" onSelect="viewSelecionada" />
+			<ScrollableView id="scroll" onScroll='scrollAlterado' >
+
+
+				<ScrollView id="ouro"  layout="vertical" >
+					<ImageView id="imagemOuro" />
+					<View id="fisicoOuro" class="secao"  layout="vertical" backgroundColor="#b5ffcd" >
+						<Label class="titulo" >Físico</Label>
+						<Label class="descricao" >Seção I - Preparo Físico</Label>
+						<Label class="descricao" >MASCULINO</Label>
+						<Label class="descricao" >Ser aprovado em quatro dos cinco grupos apresentados.'</Label>
+						<Label class="descricao" >Grupo 1 – Atletismo/Corrida\n A. Corrida – 50m em 6.7 seg.\n B. Corrida – 100m em 13,2 seg.\n C. Corrida – 200m em 26 seg.\n D. Corrida – 400m em 63 seg.\n E. Corrida – 1.500m em 5 min. 34 seg.\n F. Corrida – 10.000m em 44in.\n\n</Label>
+					    <Label class="descricao" >Grupo 2 – Provas de Campo \n A. Salto em extensão - sem impulso - 2,4m \n B. Salto em distância - 4,8m \n C. Salto em altura -1,47m \n D. Arremesso de peso - 7,25kg – 10,36m\n\n</Label>
+					    <Label class="descricao" >Grupo 3 – Força e Resistência – Escolher duas opções.\n A. 65 Flexões abdominais em 2 min.\n B. 13 Flexões de braço na barra.\n C. 42 Flexões de solo\n D. Subir 6,2m em uma corda apenas com as mãos.\n\n</Label>
+						<Label class="descricao" >Grupo 4 – Coordenação, Agilidade e Equilíbrio – Escolher três opções.\n A. Acertar 9 lances livres de Basquete em 10 arremessos, ou ...\n Pular corda acertando, no mínimo, 300 pulos seguidos.\n B. Corrida de ida e volta - 10m em 9seg. ou ...\n Cócoras (burpy) – 20 vezes em 30seg. – ver explicações\n C. Salto mortal para frente com apoio das mãos, ou ... \n Cambalhota para trás – ver explicações – ou ...\n Parada de cabeça – 10seg. (plantar bananeira) – ver explicação – ou ...\n Parada de sapo – ver explicação.\n\n</Label>
+						<Label class="descricao" >Grupo 5 – Natação – Escolher uma opção.\n A. Estilo livre – 100m em 1 min. 17 seg.\n B. Estilo costas - 100m em 1 min. 23 seg.\n C. Estilo peito - 100m em 1 min. 28 seg.\n\n</Label>
+						<Label class="descricao" >FEMININO:</Label>
+						<Label class="descricao" >Ser aprovado em quatro dos cinco grupos apresentados.\n A. Corrida – 50m em 7,9 seg.\n B. Corrida – 200m em 33 seg.\n C. Marcha atlética - 600m em 2 min. 23 seg.\n D. Corrida – 1.500m em 6 min. 40 seg.\n E. Correr e andar 5.000m em 25 min. 30 seg.\n\n</Label>
+						<Label class="descricao" >Grupo 2 – Provas de Campo – Escolher duas opções.\n A. Salto em extensão, sem impulso, 1,95m\n B. Salto em distância - 3,35m\n C. Salto em altura - 1,25m\n D. Arremesso bola de beisebol (ou correspondente) - 39,7m\n\n</Label>
+						<Label class="descricao" >Grupo 3 – Força e Resistência – Escolher três opções.\n A. 48 Flexões abdominais em 2min.\n B. Sustentar o peso do corpo na barra com os braços flexionados 25seg. – ver explicação.\n C. 20 Flexões de braço no solo. – ver explicação.\n\n</Label>
+						<Label class="descricao" >Grupo 4 – Coordenação, Agilidade e Equilíbrio – Escolher três opções.\n A. Acertar 9 lances livres de Basquete em 10 arremessos, ou\n Pular corda acertando, no mínimo, 300 pulos seguidos.\n B. Corrida de ida e volta - 10m em 9min 07seg. ou\n C. Salto mortal para frente, com apoio das mãos, ou\n Parada de cabeça – 10seg. (plantar bananeira) – ver explicação – ou\n Parada de sapo – ver explicação.\n Cócoras (burpy) – 20 vezes em 30seg. – ver explicação\n\n</Label>
+						<Label class="descricao" >Grupo 5 – Natação – Escolher uma opção.\n A. Estilo livre – 100m em 1 min. 17 seg.\n B. Estilo costas - 100m em 1 min. 23 seg.\n C. Estilo peito - 100m em 1 min. 28 seg.\n\n</Label>
+						<Label class="descricao" >INFORMAÇÕES ADICIONAIS\n</Label>
+						<Label class="descricao" >MASCULINO\n</Label>
+						<Label class="descricao" >Flexões de braço na barra: A forma correta de segurar a barra é com a empunhadura reversa da mão. O queixo deve subir acima da barra de flexão. Os braços devem ficar quase que totalmente estendidos, com os cotovelos levemente flexionados.\n</Label>
+						<Label class="descricao" >Flexões de braço no solo: O peso nas flexões de solo deve ser distribuído por igual. As mãos um pouco abaixo dos ombros. Pés juntos. Erga os braços, mantendo o corpo retesado, até que os cotovelos fiquem retos. Ao voltar à posição anterior, continue mantendo o corpo retesado e reto, baixando o corpo até quase tocar o solo. Ele deve ser contínuo.\n</Label>
+						<Label class="descricao" >Cambalhota para trás: Posição inicial: Abaixar-se para trás como se estivesse sentado em uma cadeira baixa. Atenue a queda com as mãos, tendo os dedos estirados para frente no colchão. Rolar pra trás com o apoio das palmas das mãos colocadas ao lado da cabeça e acima dos ombros. Não tocar os joelhos no chão, indo diretamente aos pés. Repetir três séries de três movimentos.\n</Label>
+						<Label class="descricao" >FEMININO\n</Label>
+						<Label class="descricao" >Sustentar o peso do corpo na barra, com os braços flexionados - Posição Inicial : (Uma barra horizontal com cerca de 4 cm de diâmetro deve ser ajustada, aproximadamente, à altura da pessoa em pé). A candidata segura a barra com as palmas das mãos voltadas para a barra. Com a ajuda de duas pessoas, uma na frente e outra atrás, a aluna levanta seu corpo até atingir uma posição onde o queixo fique acima da barra, os cotovelos flexionados e o peito perto da barra. Essa posição deve ser mantida por, pelo menos, 25segundos a fim de ser aprovada no teste.\n</Label>
+						<Label class="descricao" >O cronômetro deve começar a marcar logo que a candidata atingir a posição correta e parar no momento em o queixo tocar a barra, ou a cabeça pender para trás para manter o queixo acima da barra ou o queixo ficar abaixo da barra.\n</Label>
+						<Label class="descricao" >O registro deverá ser feito arredondando o segundo mais próximo do tempo em que a candidata manteve a posição correta.\n</Label>
+						<Label class="descricao" >Flexões de braço no solo: Posição Inicial : braços estendidos, com as mãos espalmadas no chão, voltadas para frente, um pouco abaixo e levemente fora do alinhamento com os ombros. Joelhos no chão e corpo reto da cabeça até os joelhos. Flexionar os joelhos e erguer a ponta dos pés.\n</Label>
+						<Label class="descricao" >Em seguida, manter o corpo retesado e reto, flexionar os cotovelos sem tocar o chão com o peito. Depois, voltar à posição inicial. Manter o corpo reto; não levantar as nádegas; o abdômen não deve arquear.\n</Label>
+						<Label class="descricao" >MASCULINO E FEMININO\n</Label>
+						<Label class="descricao" >Flexões abdominais: Posição Inicial : O candidato deita de costas com as pernas estendidas, separadas cerca de 30 cm, enquanto outra pessoa segura seus tornozelos a fim de manter os calcanhares firmados contra o solo. Dado o sinal, o candidato senta-se e toca seus pés com os dedos das mãos, voltando, em seguida à posição inicial. Ai, então, cada flexão é contada.\n</Label>
+						<Label class="descricao" >Corrida de ida e volta: Dois marcadores, do mesmo tamanho, devem ser colocados a uma distância de 10 metros da linha de início. Dado o sinal, o candidato deve correr, pegar o marcador, voltar até a linha inicial, deixar o marcador, voltar correndo e pegar o outro marcador e trazê-lo até a linha de chegada. Ai, então, estará concluída a prova.\n</Label>
+						<Label class="descricao" >Cócoras (Burpy): Equipamento para o exercício: Um cronômetro, ou um relógio com marcador de segundos. Posição Inicial : O aluno fica em posição de firme.\n</Label>
+						<Label class="descricao" >Dado o sinal o candidato flexiona os joelhos e coloca as mãos no chão, na frente dos pés. Os braços podem estar posicionados em frente aos joelhos, entre eles ou ao lado, de cócoras. Em seguida, arremessar as pernas para trás de tal forma a deixar o corpo perfeitamente alinhado – dos ombros aos pés (como na posição de flexão de solo). Arremessar, então os pés para frente, voltando à posição de cócoras e então voltar à posição inicial, em pé firme. Após o sinal inicial, o coordenador da prova marca 30 segundos e conclui a prova.\n</Label>
+						<Label class="descricao" >Parada de Sapo: Palmas das mãos apoiadas no solo, afastadas na mesma largura dos ombros. Flexionar os braços, apoiando os joelhos nos cotovelos, elevando os pés do chão. Ficar nesta posição por 7 segundos (somente as 2 palmas das mãos em contato com o solo).\n</Label>
+						<Label class="descricao" bottom="10" >Parada de Cabeça: Apoiar ambas as mãos no solo, na largura dos ombros, e formar, com o apoio da cabeça, um triangulo no solo. Levantar e estender as pernas, unidas, mantendo o corpo equilibrado nesta posição por sete segundos (Plantar bananeira).\n</Label>
+					</View>
+					<View id="habilidadesOuro" class="secao"  layout="vertical" backgroundColor="#ffecb5" >
+						<Label class="titulo" >Habilidades</Label>
+						<Label class="descricao" >SEÇÃO II - Habilidades</Label>
+						<Label class="descricao" >Concluir duas das Especialidades nas áreas: Atividades Profissionais ou Habilidades Domésticas. Além delas, concluir mais duas das especialidades abaixo, não concluídas na Medalha de Prata.</Label>
+						<Label class="descricao" bottom="10" >\n Salvamento de Afogados\n Saúde & Cura\n Canoagem\n Vida Silvestre\n Esqui Aquático\n Primeiros Socorros - Nível Avançado\n Orientação\n Liderança Campestre\n Reanimação Cardiopulmonar\n Vela\n Ginástica Acrobática - Avançada\n Ciclismo - AvançadoMergulho Livre</Label>
+					</View>
+					<View id="ExpedicaoOuro" class="secao"  layout="vertical" backgroundColor="#ffb5b5" >
+						<Label class="titulo" >Expedição</Label>
+						<Label class="descricao" >SEÇÃO III - Expedição</Label>
+						<Label class="descricao" >Complete um dos seguintes:</Label>
+						<Label class="descricao" bottom="10" >1. Caminhada na mata com, pelo menos 40 quilômetros, envolvendo uma noite em acampamento.\n\n a. A expedição deve ser composta por, no mínimo, três jovens acima de 18 anos e, no máximo, oito. Não é necessário que todos os participantes estejam cumprindo requisitos para a conquista da Medalha de Ouro.\n\n b. Os acampantes devem levar todo o equipamento, alimentos, etc. em mochilas.\n\n c. Devem fazer um relatório completo, acompanhado de mapa da excursão, com observações relativas ao terreno, à flora e à fauna.\n\n d. O planejamento da excursão deve ser feito em conjunto, sendo aprovado pelo examinador indicado pela Comissão de Outorga da Medalha de Ouro.\n\n 2. Percurso em canoa com, pelo menos 64 quilômetros, envolvendo uma noite em acampamento.\n\n a. Os acampantes devem transportar todo o equipamento, alimentos, etc. na canoa e em mochilas quando necessário.\n\n b. Devem fazer um relatório completo acompanhado de mapa da excursão, com observações relativas ao terreno, à flora e à fauna.\n\n c. Devem participar da viagem em canoa, pelo menos, quatro pessoas (duas por canoa) embora não seja necessário que todos os participantes estejam cumprindo requisitos para a conquista da Medalha de Ouro.\n\n d. O planejamento da excursão deve ser feito em conjunto, sendo aprovado pelo examinador indicado pela Comissão de Outorga da Medalha de Ouro.</Label>
+					</View>
+					<View id="projetosDeServicoOuro" class="secao"  layout="vertical" backgroundColor="#b5bcff" >
+						<Label class="titulo" >Projetos De Serviço</Label>
+						<Label class="descricao" >SEÇÃO IV - Projetos De Serviço</Label>
+						<Label class="descricao" >Concluir um dos requisitos:</Label>
+						<Label class="descricao" >1. Durante, pelo menos um semestre, estar envolvido, satisfatoriamente, na liderança da Sociedade JA , da Escola Sabatina, dos Ministérios da Saúde, do Clube de Desbravadores, do Clube de Aventureiros ou outra atividade correspondente, que o Ministério Jovem da Associação/Missão escolha como substituto.</Label>
+						<Label class="descricao" >2. Servir como estudante missionário por, pelo menos, dez semanas.</Label>
+						<Label class="descricao" >3. Envolver-se ativamente por, pelo menos, 12 semanas, em atividades de evangelismo (“A Voz da Juventude”, classes Bíblicas, Pequenos Grupos, Projeto Missionário na Universidade, Evangelismo comunitário, estudos bíblicos, etc.).</Label>
+						<Label class="descricao" bottom="10" >4. Participar em um projeto de serviço comunitário com, pelo menos, duas semanas de duração, que não tenha sido realizado para a Medalha de Prata. Escolher entre um dos seguintes:\n• Avaliação da comunidade.\n• Cursos de orientação profissional.\n• Alfabetização de adultos.\n• Assistência às vítimas de catástrofes.\n• Assistência a famílias carentes.\n• Prevenção de saúde pública.\n• Desenvolvimento rural.\n• Atuação voluntária em uma instituição de atendimento a carentes.\n• Desenvolvimento urbano.</Label>
+					</View>
+					<View id="AperfeicoamenteCulturalOuro" class="secao"  layout="vertical" backgroundColor="#ffb5fb" >
+						<Label class="titulo" >Aperfeiçoamento Cultural</Label>
+						<Label class="descricao" >SEÇÃO V - Aperfeiçoamento Cultural</Label>
+						<Label class="descricao" >Cumprir um grupo.</Label>
+						<Label class="descricao" >Grupo 1 – Música \n Concluir uma das opções: \n 1. Apresentar um recital de música clássica ou sacra com, pelo menos, 30 minutos de duração incluindo, pelo menos, outros três participantes (vocal ou instrumental). O repertório e apresentação devem ser avaliados por um especialista em música, nomeado pela Comissão da Medalha de Ouro.\n 2. Assistir a três concertos e apresentar um relatório com, no mínimo, 1.500 palavras, a respeito dos artistas, das composições e dos compositores. O relatório deverá ser avaliado por um especialista nomeado pela Comissão da Medalha de Ouro.</Label>
+						<Label class="descricao" >Grupo 2 – Arte \n Concluir uma das opções: \n 1. Fazer exposição pública de, pelo menos, cinco obras originais (pintura, escultura, gravura, etc.) que tenha produzido. O trabalho deve ser avaliado e aprovado por um especialista em arte nomeado pela Comissão da Medalha de Ouro. \n 2. Visitar uma galeria de arte ou comparecer a três exposições de arte, apresentando um relatório escrito contendo, no mínimo, 1.500 palavras a respeito da arte observada. Um especialista em artes, indicado pela Comissão da Medalha de Ouro, irá julgar o texto.</Label>
+						<Label class="descricao" >Grupo 3 – Literatura Sagrada \n Concluir uma das opções: \n 1. Ler um livro de Ellen G. White com, pelo menos, 300 páginas. \n 2. Ler o Novo Testamento em uma versão moderna. </Label>
+						<Label class="descricao" bottom="10" >Grupo 4 – Etnia \n Escolher um país, que não seja o seu, e que tenha reconhecimento das Nações Unidas. Em seguida descrever sua origem, cultura, antecedentes religiosos. Apresentar, também, um estudo sobre a origem, desenvolvimento e trabalho atual dos Adventistas do Sétimo Dia na região. A pesquisa deve incluir contato pessoal ou por correspondência com pessoas da região pesquisada. Devem ser incluídas, pelo menos, cinco imagens para ilustrar o trabalho dos Adventistas do Sétimo Dia no país escolhido.</Label>
+					</View>
+					<View id="detalhesOuro" class="secao"  layout="vertical" backgroundColor="#b5fffb" bottom="100" >
+						<Label class="titulo" >Detalhes</Label>
+						<Label class="descricao" >MEDALHA DE OURO</Label>
+						<Label class="descricao" >Material originalmente produzido pelo Ministério Jovem da Associação Geral e adaptado pelo Ministério Jovem da Divisão Sul-Americana.</Label>
+						<Label class="descricao" >A Medalha de Ouro será entregue a jovens com idade entre 20 e 35 anos que demonstrarem grandes qualidades de desenvolvimento físico, mental e cultural. Promovida pelo Ministério Jovem da Igreja Adventista do Sétimo Dia, ela dá aos jovens a oportunidade de se superarem e realizarem atividades de alto nível. Não é pré-requisito ter recebido a Medalha de Prata ou ser membro da Igreja Adventista do Sétimo Dia.</Label>
+						<Label class="descricao" >Cada ganhador da Medalha de Ouro vai estar mais bem preparado para assumir seu lugar como membro positivamente ativo de sua igreja e comunidade. O esforço e a perseverança, para se classificar em todas as atividades, vão desenvolver qualidades de caráter que são tão necessárias na geração de hoje.Cada ganhador da Medalha de Ouro vai estar mais bem preparado para assumir seu lugar como membro positivamente ativo de sua igreja e comunidade. O esforço e a perseverança, para se classificar em todas as atividades, vão desenvolver qualidades de caráter que são tão necessárias na geração de hoje.</Label>
+						<Label class="descricao" >O futuro de nossa Igreja depende da capacidade e disposição dos jovens de servirem seus semelhantes vivendo uma vida guiada por Cristo. Pelo poder de Deus esses jovens cristãos vão ter um papel nobre e destacado nos momentos finais da história. Os desafios do povo de Deus vão ser grandes e apenas os jovens que estiverem bem firmados na Palavra de Deus em uma plataforma moral, que reflete a pureza do Senhor Jesus, vão ser capazes de resistir. A conquista da Medalha de Ouro foi estabelecida para preparar estes jovens, desenvolvendo boa saúde, pensamento puro e firmeza de visão espiritual.</Label>
+						<Label class="descricao" >O Diretor do Ministério Jovem da Associação/Missão é quem dirige todo o projeto de Conquista da Medalha de Ouro e supervisiona as provas. Ele pode definir outras pessoas, devidamente preparadas, para coordenarem as atividades em seu lugar.</Label>
+						<Label class="descricao" >Deve ser mantido um registro exato da conclusão de cada requisito completado pelo candidato. A coluna à direita contém um espaço destinado às anotações de cada requisito:</Label>
+						<Label class="descricao" >(1) a data de conclusão</Label>
+						<Label class="descricao" >(2) a pontuação (onde indicado), e </Label>
+						<Label class="descricao" bottom="10"  >(3) a assinatura do examinador autorizado pela comissão da Conquista da Medalha de Ouro.</Label>
+					</View>
+				</ScrollView>
+
+
+				<ScrollView id="prata" layout="vertical" >
+					<ImageView id="imagemPrata" />
+					<View id="fisicoPrata" class="secao"  layout="vertical" backgroundColor="#b5ffcd" >
+						<Label class="titulo" >Físico</Label>
+						<Label class="descricao" >Seção I - Preparo Físico</Label>
+						<Label class="descricao" >MASCULINO</Label>
+						<Label class="descricao" >Ser aprovado em três dos cinco grupos apresentados.</Label>
+						<Label class="descricao" >Grupo 1 – Atletismo/Corrida – Escolher quatro opções.\n A.    Corrida - 50m em 7,4 seg.\n B.    Corrida - 100m em 15,5 seg.\n C.    Corrida - 200m em 28 seg.\n D.    Corrida 400m em 66,6 seg.\n E.    Marcha atlética - 600m em 1 min. 37 seg.\n F.     Corrida - 1.500m em 5 min. 36 seg.\n G.    Corrida - 3.000m 12 min. 27 seg.\n H.    Corrida 5.000m 23 min. 5 seg.\n</Label>
+						<Label class="descricao" >Grupo 2 – Provas de Campo – Escolher três opções.\n A.    Salto em extensão sem impulso - 2,25m\n B.    Salto em Distância – 3,40m\n C.    Salto em Altura - 1,25m\n D.    Arremesso de peso - 5,44kg - 10,36m\n E.    Arremesso bola de beisebol (ou correspondente) – 56m\n</Label>
+						<Label class="descricao" >Grupo 3 – Força e Resistência – Escolher duas opções.\n A.    55 Flexões abdominais em 2min.\n B.    12 Flexões de braço na barra.\n C.    40 Flexões de braço no solo.\n D.    Subir 5m em uma na corda usando apenas as mãos.\n</Label>
+						<Label class="descricao" >Grupo 4 – Coordenação, Agilidade e Equilíbrio – Escolher três opções.\n A.    Acertar 7 cestas em 10 arremessos (Basquete).\n B.    Corrida de ida e volta - 10m. em 10,1seg.\n C.    Cócoras (burpy) – 15 vezes em 30seg. – ver explicação.\n D.    1. Cambalhota Frente - ver explicação\n D.    2. Cambalhota para trás – ver explicação.\n D.    3. Parada de sapo – ver explicação.\n D.    4. Parada de cabeça (plantar bananeira) – ver explicação.\n D.    5. Salto mortal com apoio das mãos – ver explicação\n E.    Pular corda acertando, no mínimo, 150 pulos seguidos.\n</Label>
+						<Label class="descricao" >Grupo 5 – Natação – Escolher uma opção.\n A.Estilo livre - 100m em 1 min. 38 seg.\n B.Estilo costas - 100m em 1 min. 55 seg.\n C.Estilo peito - 100m em 2 min.\n</Label>
+						<Label class="descricao" >FEMININO</Label>
+						<Label class="descricao" >Ser aprovado em três dos cinco grupos apresentados.\n</Label>
+						<Label class="descricao" >Grupo 1 – Atletismo/Corrida – Escolher duas opções.\n A.    Corrida - 50m em 8,5 seg.\n B.    Corrida - 100m em 18 seg.\n C.    Corrida - 200m em 36s eg.\n D.    Corrida - 400m – 1 min 25 seg.\n E.    Marcha atlética - 600m em 2 min. 36 seg.\n F.     Marcha atlética - 1.500m em 8 min. 40 seg.\n G.    Corrida - 3.000m em 19 min. 55 seg.\n H.    Corrida - 5.000m em 39 min. 20 seg.\n </Label>
+						<Label class="descricao" >Grupo 2 – Provas de Campo – Escolher duas opções.\n A.    Salto em extensão sem impulso - 1,80m.\n B.    Salto em extensão - 2,50m.\n C.    Salto em Altura - 1,10m.\n D.    Arremesso bola de beisebol (ou correspondente) - 27m.\n</Label>
+						<Label class="descricao" >Grupo 3 – Força e Resistência – Escolher duas opções.\n A.    40 Flexões abdominais em 2 min.\n B.    Sustentar o peso do corpo na barra, com os braços flexionados, por 19 seg. – ver explicação.\n C.    30 Flexões de braço no solo – ver explicação.\n </Label>
+						<Label class="descricao" >Grupo 4 – Coordenação, Agilidade e Equilíbrio – Escolher três opções.\n A.    Acertar 6 cestas em 10 arremessos (Basquete)\n B.    Corrida de ida e volta - 10m em 11,3 seg.\n C.    Cócoras (burpy) – 15 vezes em 30 seg. – ver explicação.\n D.    1. Cambalhota Frente - ver explicação\n D.    2. Cambalhota para trás – ver explicação.\n D.    3. Parada de sapo – ver explicação.\n D.    4. Parada de cabeça (plantar bananeira) – ver explicação.\n E.    Pular corda acertando, no mínimo, 150 pulos seguidos.\n </Label>
+						<Label class="descricao" >Grupo 5 – Natação – Escolher uma opção.\n A.    Estilo livre - 100m em 1 min.40 seg.\n B.    Estilo costas - 100m em 2 min.05 seg.\n C.    Estilo peito - 100m em 2 min.11 seg.\n\n</Label>
+						<Label class="descricao" >INFORMAÇÕES ADICIONAIS</Label>
+						<Label class="descricao" >MASCULINO</Label>
+						<Label class="descricao" >Grupo 3 – Requisito B - Flexões de braço na barra: A forma correta de segurar a barra é com a empunhadura reversa da mão. O queixo deve subir acima da barra de flexão. Os braços devem ficar quase que totalmente estendidos, com os cotovelos levemente flexionados para baixo.</Label>
+						<Label class="descricao" >Grupo 3 – Requisito C - Flexões de braço no solo: O peso nas flexões de solo deve ser distribuído por igual. As mãos um pouco abaixo dos ombros. Pés juntos. Erga os braços, mantendo o corpo retesado, até que os cotovelos fiquem retos. Ao voltar à posição anterior, continue mantendo o corpo retesado e reto, baixando o corpo até quase tocar o solo.\n</Label>
+						<Label class="descricao" >FEMININO</Label>
+						<Label class="descricao" >Grupo 3 – Requisito B - Sustentar o peso do corpo na barra, com os braços flexionados - Posição Inicial: (Uma barra horizontal com cerca de 4 cm de diâmetro deve ser ajustada, aproximadamente, à altura da pessoa em pé). A candidata segura a barra com as palmas das mãos voltadas para a barra. Com a ajuda de duas pessoas, uma na frente e outra atrás, a aluna levanta seu corpo até atingir uma posição onde o queixo fique acima da barra, os cotovelos flexionados e o peito perto da barra. Essa posição deve ser mantida por, pelo menos, 19 segundos a fim de ser aprovada no teste.</Label>
+						<Label class="descricao" >O cronômetro deve começar a marcar logo que a candidata atingir a posição correta e parar no momento em o queixo tocar a barra, ou a cabeça pender para trás para manter o queixo acima da barra ou o queixo ficar abaixo da barra.</Label>
+						<Label class="descricao" >O registro deverá ser feito arredondando o segundo mais próximo do tempo em que a candidata manteve a posição correta.</Label>
+						<Label class="descricao" >Grupo 3 – Requisito C - Flexões de braço no solo: Posição Inicial : braços estendidos, com as mãos espalmadas no chão, voltadas para frente, um pouco abaixo e levemente fora do alinhamento com os ombros. Joelhos no chão e corpo reto da cabeça até os joelhos. Flexionar os joelhos e erguer a ponta dos pés.</Label>
+						<Label class="descricao" >Em seguida, manter o corpo retesado e reto, flexionar os cotovelos sem tocar o chão com o peito. Depois, voltar à posição inicial. Manter o corpo reto; não levantar as nádegas; o abdômen não deve arquear.\n</Label>
+						<Label class="descricao" >MASCULINO E FEMININO</Label>
+						<Label class="descricao" >Grupo 3 – Requisito A - Flexões abdominais: Posição Inicial : O candidato deita de costas com as pernas estendidas, separadas cerca de 30 cm, enquanto outra pessoa segura seus tornozelos a fim de manter os calcanhares firmados contra o solo. Dado o sinal, o candidato senta-se e toca seus pés com os dedos das mãos, voltando, em seguida à posição inicial. Ai, então, cada flexão é contada.</Label>
+						<Label class="descricao" >Grupo 4 – Requisito B - Corrida de ida e volta: Dois marcadores, do mesmo tamanho, devem ser colocados a uma distância de 10 metros da linha de início. Dado o sinal, o candidato deve correr, pegar o marcador, voltar até a linha inicial, deixar o marcador, voltar correndo e pegar o outro marcador e trazê-lo até a linha de chegada. Ai, então, estará concluída a prova.</Label>
+						<Label class="descricao" >Grupo 4 – Requisito C – Cócoras (Burpy): Equipamento para o exercício: Um cronômetro, ou um relógio com marcador de segundos. Posição Inicial: O candidato fica em posição de firme.</Label>
+						<Label class="descricao" >Dado o sinal o candidato flexiona os joelhos e coloca as mãos no chão, na frente dos pés. Os braços podem estar posicionados em frente aos joelhos, entre eles ou ao lado, de cócoras. Em seguida, arremessar as pernas para trás de tal forma a deixar o corpo perfeitamente alinhado – dos ombros aos pés (como na posição de flexão de solo). Arremessar, então, os pés para frente, voltando à posição de cócoras e então voltar à posição inicial, em pé firme. Após o sinal inicial, o coordenador da prova marca 30 segundos e conclui a prova.</Label>
+						<Label class="descricao" >Grupo 4 – Requisito D.1 - Cambalhota para Frente: Realizar séries de 3 cambalhotas. Ficar na posição inicial, agachado, para fazer o movimento para frente. O queixo deve estar tocando no peito, as mãos espalmadas em um colchonete e o peso igualmente distribuído. Dado o sinal, encurvar-se, soltar o peso e colocá-lo na parte de trás do pescoço e dos ombros e não na cabeça. Repetir três séries de três movimentos.</Label>
+						<Label class="descricao" >Grupo 4 – Requisito D.2 - Cambalhota para trás: Posição inicial: Abaixar-se para trás como se estivesse sentado em uma cadeira baixa. Atenue a queda com as mãos, tendo os dedos estirados para frente no colchão. Rolar pra trás com o apoio das palmas das mãos colocadas ao lado da cabeça e acima dos ombros. Não tocar os joelhos no chão, indo diretamente aos pés. Repetir três séries de três movimentos.</Label>
+						<Label class="descricao" >Grupo 4 – Requisito D.3 – Parada de Sapo: Palmas das mãos apoiadas no solo, afastadas na mesma largura dos ombros. Flexionar os braços, apoiando os joelhos nos cotovelos, elevando os pés do chão. Ficar nesta posição por 7 segundos (somente as 2 palmas das mãos em contato com o solo).</Label>
+						<Label class="descricao" >Grupo 4 – Requisito D.4 – Parada de Cabeça: Apoiar ambas as mãos no solo, na largura dos ombros, e formar com o apoio da cabeça um triângulo no solo. Levantar e estender as pernas, unidas, mantendo o corpo equilibrado nesta posição por sete segundos (Plantar bananeira).\n</Label>
+					</View>
+					<View id="habilidadesPrata" class="secao"  layout="vertical" backgroundColor="#ffecb5" >
+						<Label class="titulo" >Habilidades</Label>
+						<Label class="descricao" >SEÇÃO II - Habilidades</Label>
+						<Label class="descricao" >Completar duas especialidades:</Label>
+						<Label class="descricao" >Salvamento de Afogados\nResgate Básico\nCanoagem\nEnfermagem Básica\nCiclismo\nPrimeiros Socorros\nOrientação\nLiderança Campestre\nExcursionismo Pedestre com Mochila\nFotografia\nEvangelismo pessoal\n</Label>
+					</View>
+					<View id="expedicaoPrata" class="secao"  layout="vertical" backgroundColor="#ffb5b5" >
+						<Label class="titulo" >Expedição</Label>
+						<Label class="descricao" >SEÇÃO III - Expedição</Label>
+						<Label class="descricao" >1. Caminhada na mata, pelo menos 36 quilômetros , incluindo duas noites a céu aberto ou em barracas. Essas duas noites devem ser passadas em acampamentos distantes 8 km um do outro.\n\n2. O grupo deverá ser formado por, no mínimo, três e no máximo seis pessoas. Nem todos precisam estar participando da prova.\n\n3. Apresentar um diário completo da prova, incluindo um mapa do trajeto, com observações da vida selvagem, das plantas ou algum outro estudo auxiliar da expedição.\n\n4. O planejamento deve ser feito em equipe, sendo aprovado pelo Ministério Jovem da Associação/Missão, ou seu representante, antes da caminhada.\n\n5. Deve ser levado todo o alimento necessário. Utilizar alimentos desidratados quando necessário para ter um cardápio balanceado.\n\n6. Os participantes da caminhada devem levar um kit pessoal normal, além de equipamentos leves de camping, bússola, utensílios de cozinha e kit de primeiros socorros.\n</Label>
+					</View>
+					<View id="projetosDeServicoPrata" class="secao"  layout="vertical" backgroundColor="#b5bcff" >
+						<Label class="titulo" >Projetos De Serviço</Label>
+						<Label class="descricao" >SEÇÃO IV - Projetos De Serviço</Label>
+						<Label class="descricao" >Concluir um dos requisitos:\n</Label>
+						<Label class="descricao" >A. Durante, pelo menos, um semestre estar envolvido, satisfatoriamente, na liderança da Sociedade JA , da Escola Sabatina, dos Ministérios da Saúde, do Clube de Desbravadores, do Clube de Aventureiros ou outra atividade correspondente, que o Ministério Jovem da Associação/Missão escolha como substituto.\n</Label>
+						<Label class="descricao" >B. Participar em um projeto de serviço comunitário com, pelo menos, uma semana de duração. Escolher entre um dos seguintes:</Label>
+						<Label class="descricao" >• Avaliação da comunidade.\n • Cursos de orientação profissional.\n • Alfabetização de adultos.\n • Assistência às vítimas de catástrofes.\n • Assistência a famílias carentes.\n • Prevenção de saúde pública.\n • Desenvolvimento rural.\n • Atuação voluntária em uma instituição de atendimento a carentes.\n • Desenvolvimento urbano.\n </Label>
+					</View>
+					<View id="aperfeicoamentoPrata" class="secao"  layout="vertical" backgroundColor="#ffb5fb" >
+						<Label class="titulo" >Aperfeiçoamento Cultural</Label>
+						<Label class="descricao" >SEÇÃO V - Aperfeiçoamento Cultural</Label>
+						<Label class="descricao" >Cumprir um dos requisitos:\n</Label>
+						<Label class="descricao" >1. Ler o livro do curso de leitura JA do ano em curso.\n</Label>
+						<Label class="descricao" >2. Ler 200 páginas de um ou mais livros escritos por Ellen G. White.\n</Label>
+						<Label class="descricao" >3. Escrever um artigo ou história com, pelo menos, mil palavras e tê-lo aceito para publicação em um jornal ou revista da Igreja.\n</Label>
+						<Label class="descricao" >4. Ler um livro com, pelo menos, 200 páginas sobre desenvolvimento de liderança, discipulado ou arrecadação de fundos.\n</Label>
+					</View>
+					<View id="detalhesPrata" class="secao"  layout="vertical" backgroundColor="#b5fffb" bottom="100" >
+						<Label class="titulo" >Detalhes</Label>
+						<Label class="descricao" >MEDALHA DE PRATA</Label>
+						<Label class="descricao" >DETALHES\n</Label>
+						<Label class="descricao" >PLANO DA MEDALHA DE PRATA</Label>
+						<Label class="descricao" >A Medalha de Prata foi preparada para jovens cristãos de 14 a 19 anos de idade (acima de 20 anos será opcional) que demonstrarem grandes qualidades de desenvolvimento físico, mental e cultural. Promovida pelo do Ministério Jovem da Igreja Adventista do Sétimo Dia, ela dá aos jovens a oportunidade de se superarem e se realizarem com atividades de alto nível.</Label>
+						<Label class="descricao" >Cada participante e ganhador da Medalha de Prata vai estar mais bem preparado para assumir seu lugar como membro positivamente ativo de sua igreja e comunidade. O esforço e a perseverança, para se classificar em todas as atividades, vão desenvolver qualidades de caráter que são tão necessárias na geração de hoje.</Label>
+						<Label class="descricao" >O futuro de nossa Igreja depende da capacidade e disposição dos jovens de servirem seus semelhantes vivendo uma vida guiada por Cristo. Pelo poder de Deus esses jovens cristãos vão ter um papel nobre e destacado nos momentos finais da história. Os desafios do povo de Deus vão ser grandes e apenas os jovens que estiverem bem firmados na Palavra de Deus em uma plataforma moral, que reflete a pureza do Senhor Jesus, vão ser capazes de resistir. A conquista da Medalha de Prata foi estabelecida para preparar estes jovens, desenvolvendo boa saúde, pensamento puro e firmeza de visão espiritual.\n</Label>
+						<Label class="descricao" >A CONQUISTA DA MEDALHA</Label>
+						<Label class="descricao" >O Diretor do Ministério Jovem da Associação/Missão é quem dirige todo o projeto de Conquista da Medalha de Prata e supervisiona as provas. Ele pode definir outras pessoas, devidamente preparadas, para coordenarem as atividades em seu lugar.</Label>
+						<Label class="descricao" >Na igreja local o diretor de jovens será o coordenador da comissão de Conquista da Medalha de Prata. Essa comissão deve definir examinadores bem preparados e submeter todo o projeto à aprovação do Ministério Jovem da Associação/Missão. O projeto se destina especialmente aos jovens Adventistas do Sétimo Dia, mas não é exigido que aquele que recebe a medalha seja membro da Igreja.</Label>
+						<Label class="descricao" >Deve ser mantido um registro exato da conclusão de cada requisito completado pelo candidato. A coluna à direita contém um espaço destinado às anotações de cada requisito: (1) a data de conclusão, (2) a pontuação (onde indicado), e (3) a assinatura do examinador autorizado pela comissão da Conquista da Medalha de Prata.\n</Label>
+						<Label class="descricao" >A ENTREGA DA MEDALHA\n</Label>
+						<Label class="descricao" >A entrega da Medalha de Prata deve ser feita em uma cerimônia marcante e especial, na qual o diretor do Ministério Jovem da Associação/Missão esteja presente. Podem ser convidados outros oficiais da igreja ou da comunidade para participarem na cerimônia. A entrega da medalha deverá ser a parte principal do programa.</Label>
+						<Label class="descricao" >A medalha será, definitivamente, daquele que a recebeu. Seu nome deve ser gravado no verso da medalha. (Não deverá ser entregue nenhuma medalha sem a gravação do nome)</Label>
+						<Label class="descricao" >O PLANO DA CONQUISTA\n</Label>
+						<Label class="descricao" >O plano de Conquista da Medalha de Prata está dividido em cinco áreas:\n</Label>
+						<Label class="descricao" >1. Preparo físico – Existem várias opcões, mas é fundamental que cada pessoa classificada receba um certificado, do examinador oficialmente designado, quando seus registros finais forem concluidos.</Label>
+						<Label class="descricao" >2. Especialidades – O desenvolvimento de habilidades segue os requisitos apresentados no programa de Especialidades dos Desbravadores . São apresentadas dez Especialidades e o participante deve se classificar em duas.</Label>
+						<Label class="descricao" >3. Expedição – São dadas orientações para uma desafiadora expedição e é muito importante que aqueles que pensam em fazê-la confiram, com o examinador qualificado, se todas as condições foram devidamente cumpridas e conferidas.</Label>
+						<Label class="descricao" >4. Projetos de Serviço – Nesta seção o participante precisa ter um registro, demonstrando que cumpriu, com sucesso, suas responsabilidades.</Label>
+						<Label class="descricao" >5. Aperfeiçoamento Cultural – O participante pode escolher, mas precisa receber um certificado, oficialmente reconhecido, após sua leitura ou redação.\n</Label>
+						<Label class="descricao" >by Jonata Klabunde</Label>
+						<Label class="descricao" >contato: Jonata_k@yahoo.com.br</Label>
+					</View>
+				</ScrollView>
+
+				<ScrollView id="bronze" layout="vertical" >
+					<ImageView id="imagemBronze" />
+					<View id="detalhesBronze" class="secao"  layout="vertical" backgroundColor="#b5fffb" bottom="100" >
+						<Label class="titulo" >Detalhes</Label>
+						<Label class="titulo" >MEDALHA DE DEDICAÇÃO / BRONZE\n</Label>
+						<Label class="descricao" >Material originalmente produzido pelo Ministério Jovem da Associação Geral e adaptado pelo Ministério Jovem da Divisão Sul-Americana.\n</Label>
+						<Label class="descricao" >Os requisitos que constam neste registro devem ser cumpridos no período mínimo de quatro e máximo de oito meses. O candidato à medalha deverá possuir entre dezesseis e trinta e cinco anos de idade.\n</Label>
+						<Label class="descricao" >Para que o candidato seja investido necessita cumprir 85% dos requisitos.\n</Label>
+						<Label class="descricao" >No dia da cerimônia o candidato deverá ter em mãos todos os seus registros assinados, para que sejam confirmados pelo Diretor JA.\n\n\n</Label>
+						<Label class="descricao" >ENVOLVIMENTO COM A IGREJA\n</Label>
+						<Label class="descricao" >Com a realização das tarefas estabelecidas para receber a Medalha de Dedicação, os jovens estarão auxiliando a Igreja em todas as áreas e ao mesmo tempo se identificando com uma delas. Eles precisam ser parte integrante da Igreja, trabalhando por ela, pois terão um papel fundamental na terminação da obra do evangelho.\n\n</Label>
+						<Label class="descricao" >REQUISITOS\n</Label>
+						<Label class="descricao" >I. Gerais\n 1. Ser membro batizado da Igreja Adventista do Sétimo Dia.\n 2. Ter entre 16 e 35 anos de idade.\n 3. Decorar e explicar os ideais do Ministério Jovem: Alvo, Lema, Propósito e Objetivo.\n</Label>
+						<Label class="descricao" >II. Ancionato\n 1. Auxiliar o Pastor ou Ancião na visita a um candidato ao batismo.\n</Label>
+						<Label class="descricao" >III. Ministérios da mulher\n 1. Colaborar no programa de recepção durante três sábados.\n</Label>
+						<Label class="descricao" >IV. Diaconato\n  1. Participar de um mutirão para melhorar as instalações físicas da igreja;\n 2. Apresentar um trabalho contendo dois textos Bíblicos e duas citações de Ellen White sobre REVERÊNCIA\n</Label>
+						<Label class="descricao" >V. Assistência social\n 1. Doar, ou conseguir contribuições, de 10 kg de alimentos, ou 15 peças de roupas ou 15 brinquedos, entregando posteriormente a uma comunidade carente, junto com o departamento de Assistência Social.\n</Label>
+						<Label class="descricao" >VI. Tesouraria\n 1. Ser dizimista e ofertante (se tiver rendimentos)\n2. Ajudar o tesoureiro na devolução dos envelopes de dízimo, aos doadores, durante, pelo menos, três sábados.\n</Label>
+						<Label class="descricao" >VII. Mordomia\n 1. Apresentar um trabalho ou palestra, de vinte minutos sobre um dos temas a seguir:\n •  O uso devido do tempo.\n •  Nosso corpo como templo do Espírito Santo.\n •  Fidelidade a Deus nas ofertas.\n •  Administração dos dons dados por Deus.\n</Label>
+						<Label class="descricao" >VIII. Ministério da saúde\n 1. Apresentar um trabalho, de quatro páginas, ou palestra de, no mínimo, vinte minutos sobre os prejuízos causados à saúde pelo uso de drogas;\n 2. Participar de uma passeata pró-saúde.\n </Label>
+						<Label class="descricao" >IX. Escola Sabatina\n 1. Possuir a lição da Escola Sabatina;\n 2. Coordenar o estudo da lição em uma classe, como professor, pelo menos quatro sábados.\n </Label>
+						<Label class="descricao" >X. Vida familiar\n 1. Ajudar o departamento na realização de um programa ou atividade especial.\n 2. Ler o livro “O Lar Adventista”, de Ellen White.</Label>
+						<Label class="descricao" >XI. Música\n 1. Auxiliar o departamento de música, nos momentos de louvor, pelo menos três vezes.\n</Label>
+						<Label class="descricao" >XII. Ministério da criança e do adolescente\n 1. Auxiliar uma professora do departamento infantil, coordenando o estudo da lição ou ajudando a manter a reverência, pelo menos duas vezes durante um trimestre.\n 2. Visitar uma família da igreja, que tenha filhos em idade de freqüentar a Escola Sabatina dos Men ores, e incentivar os pais na sua participação.\n </Label>
+						<Label class="descricao" >XIII. Clube de desbravadores\n 1. Acompanhar três reuniões do clube, apresentando, ao final, um relatório avaliando os seguintes itens:\n •  Espiritualidade\n •  Disciplina\n •  Organização\n •  Trabalho de Equipe\n </Label>
+						<Label class="descricao" >XIV. Clube de aventureiros\n 1. Ajudar um Aventureiro a decorar o nome de 10 livros da Bíblia.\n 2. Participar de duas reuniões regulares do clube, colaborando com a diretoria.\n </Label>
+						<Label class="descricao" >XV. Sociedade de jovens\n 1. Ajudar a organizar e realizar quatro cultos JA.\n 2. Preparar, por escrito, um culto JA completo.\n </Label>
+						<Label class="descricao" >XVI. Recreação\n 1. Apresentar um trabalho de duas páginas, ou palestra de 10 minutos, sobre: Recreação Cristã.\n 2. Participar de um dos seguintes eventos:\n •  Passeio Ciclístico, (mínimo 20 km ).\n •  Retiro Espiritual\n •  Passeio junto à natureza\n •  Piquenique\n</Label>
+						<Label class="descricao" >XVII. Literatura denominacional e Espírito de Profecia\n 1. Possuir uma Bíblia\n 2. Ter o Hinário Adventista\n 3. Ler o livro “Só para Jovens” de Ellen White</Label>
+						<Label class="descricao" >XVIII. Ministério pessoal\n 1. Participar ativamente de um projeto promovido pelo departamento: Unidade de Ação, Pequeno Grupo, Duplas Missionárias, ou outro, durante dois meses.\n 2. Realizar um curso bíblico com uma pessoa interessada.\n</Label>
+						<Label class="descricao" >XIX. Comunicação\n 1. Ajudar a preparar e manter um mural para a Igreja durante um mês.\n 2. Preparar uma notícia sobre algum evento da Igreja e enviar para o departamental de comunicação da Associação ou Missão, até 15 dias após o evento.\n\n</Label>
+					</View>
+				</ScrollView>
+				<ScrollView id="Sobre"  layout="vertical" backgroundImage="/imagens/fundo.png" >
+					<ImageView id="imagemSobre" />
+					<View id="SobreDescricao" class="secao"  layout="vertical" backgroundColor="#ededed" bottom="100" >
+						<Label class="descricao" >\n\nObrigado por usar este aplicativo =)</Label>
+						<Label class="descricao" >Este é um aplicativo independente sem patrocinio que visa ajudar a você a conseguir a sua tão sonhada medalha! eu fiz minha parte criado este aplicativo, agora falta a sua em cumprir os requisitos das medalhas =)</Label>
+						<Label class="descricao" >não gostou? deixe-nos saber em que podemos melhorar! (descreva na classificação, ou mande um e-mail para jonata_k@yahoo.com.br)</Label>
+						<Label class="descricao" >Gostou do aplicativo ? classifique e veja um anuncio!\n\n</Label>
+					</View>
+				</ScrollView>
+			</ScrollableView>
+		</View>
 	</Window>
 </Alloy>

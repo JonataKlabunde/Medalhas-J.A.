@@ -1,7 +1,0 @@
-<Alloy>
-	<Window id="winFisicoID" onOpen="onOpen" >
-		<ScrollView id="scrollOuroID" layout="vertical" />
-		<ScrollView id="scrollPrataID" layout="vertical" />
-		<Label id="labelTituloID">Físico</Label>
-	</Window>
-</Alloy>
